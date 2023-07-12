@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd79218f-e9cc-42c8-b722-95f90c8da72c" name="Changes" comment="feat: implemented strategy pattern.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/observer/CurrentConditionDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/observer/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/observer/ForecastDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/observer/StatisticsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/observer/WeatherData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mehrdad/falahati/design/patterns/observer/WeatherStationTest.java" afterDir="false" />
+    <list default="true" id="fd79218f-e9cc-42c8-b722-95f90c8da72c" name="Changes" comment="feat: implemented observer pattern.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/Beverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/CondimentDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/DarkRoast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/Decaf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/Espresso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/HouseBlend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/Mocha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/Soy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/SteamedMilk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/decorator/Whip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mehrdad/falahati/design/patterns/decorator/StarbuzzCoffeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,8 +57,11 @@
       <recent name="com.mehrdad.falahati.design.patterns.observer" />
       <recent name="com.mehrdad.falahati.design.patterns.strategy" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mehrdad.falahati.design.patterns.decorator" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.WeatherStationTest">
+  <component name="RunManager" selected="JUnit.StarbuzzCoffeeTest.test_decorator_pattern">
     <configuration name="NotificationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="design-patterns" />
       <extension name="coverage">
@@ -87,6 +93,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StarbuzzCoffeeTest.test_decorator_pattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="design-patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mehrdad.falahati.design.patterns.decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mehrdad.falahati.design.patterns.decorator" />
+      <option name="MAIN_CLASS_NAME" value="com.mehrdad.falahati.design.patterns.decorator.StarbuzzCoffeeTest" />
+      <option name="METHOD_NAME" value="test_decorator_pattern" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WeatherStationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="design-patterns" />
       <extension name="coverage">
@@ -104,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StarbuzzCoffeeTest.test_decorator_pattern" />
         <item itemvalue="JUnit.WeatherStationTest" />
         <item itemvalue="JUnit.NotificationServiceTest" />
         <item itemvalue="JUnit.NotificationServiceTest.test_send_sms" />
@@ -133,11 +156,19 @@
       <option name="project" value="LOCAL" />
       <updated>1688743159505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: implemented observer pattern.">
+      <created>1688896862566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688896862566</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: implemented strategy pattern." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented strategy pattern." />
+    <MESSAGE value="feat: implemented observer pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented observer pattern." />
   </component>
 </project>

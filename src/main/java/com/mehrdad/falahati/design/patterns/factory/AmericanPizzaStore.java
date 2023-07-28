@@ -1,12 +1,16 @@
 package com.mehrdad.falahati.design.patterns.factory;
 
 public final class AmericanPizzaStore extends PizzaStore {
+    private final PizzaSelectorExecutor executor;
+
+    public AmericanPizzaStore() {
+        this.executor = new PizzaSelectorExecutor();
+        new AmericanChickenPizzaCommand(executor);
+        new AmericanMeatPizzaCommand(executor);
+    }
+
     @Override
-    protected Pizza createPizza(String type) {
-        return switch (type) {
-            case "chicken" -> new AmericanChickenPizza();
-            case "meat" -> new AmericanMeatPizza();
-            default -> throw new IllegalArgumentException("we do not have this " + type + "of pizza");
-        };
+    protected Pizza createPizza(PizzaType type) {
+        return executor.getInstance(StoreType.getStoreType("AMERICAN", type));
     }
 }

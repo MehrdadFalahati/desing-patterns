@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd79218f-e9cc-42c8-b722-95f90c8da72c" name="Changes" comment="feat: implemented decorator pattern.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/AmericanChickenPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/AmericanMeatPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/AmericanPizzaStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/ItalianChickenPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/ItalianMeatPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/ItalianPizzaStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/Pizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/PizzaStore.java" afterDir="false" />
+    <list default="true" id="fd79218f-e9cc-42c8-b722-95f90c8da72c" name="Changes" comment="feat: implemented factory design pattern.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/AmericanChickenPizzaCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/AmericanMeatPizzaCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/ItalianChickenPizzaCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/ItalianMeatPizzaCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/PizzaSelectorCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/PizzaSelectorExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/PizzaType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/StoreType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mehrdad/falahati/design/patterns/factory/PizzaStoreTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/AmericanPizzaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/AmericanPizzaStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/ItalianPizzaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/ItalianPizzaStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/PizzaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mehrdad/falahati/design/patterns/factory/PizzaStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,7 +64,7 @@
       <recent name="com.mehrdad.falahati.design.patterns.decorator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StarbuzzCoffeeTest.test_decorator_pattern">
+  <component name="RunManager" selected="JUnit.PizzaStoreTest.testPizzaStore">
     <configuration name="NotificationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="design-patterns" />
       <extension name="coverage">
@@ -86,6 +91,22 @@
       <option name="PACKAGE_NAME" value="com.mehrdad.falahati.design.patterns.strategy" />
       <option name="MAIN_CLASS_NAME" value="com.mehrdad.falahati.design.patterns.strategy.NotificationServiceTest" />
       <option name="METHOD_NAME" value="test_send_sms" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PizzaStoreTest.testPizzaStore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="design-patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mehrdad.falahati.design.patterns.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mehrdad.falahati.design.patterns.factory" />
+      <option name="MAIN_CLASS_NAME" value="com.mehrdad.falahati.design.patterns.factory.PizzaStoreTest" />
+      <option name="METHOD_NAME" value="testPizzaStore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,6 +145,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PizzaStoreTest.testPizzaStore" />
         <item itemvalue="JUnit.StarbuzzCoffeeTest.test_decorator_pattern" />
         <item itemvalue="JUnit.WeatherStationTest" />
         <item itemvalue="JUnit.NotificationServiceTest" />
@@ -168,13 +190,29 @@
       <option name="project" value="LOCAL" />
       <updated>1689173795334</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: created some class for pizza store.">
+      <created>1690563539676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690563539676</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: implemented factory design pattern.">
+      <created>1690563741343</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690563741343</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: implemented strategy pattern." />
     <MESSAGE value="feat: implemented observer pattern." />
     <MESSAGE value="feat: implemented decorator pattern." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented decorator pattern." />
+    <MESSAGE value="feat: created some class for pizza store." />
+    <MESSAGE value="feat: implemented factory design pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented factory design pattern." />
   </component>
 </project>
